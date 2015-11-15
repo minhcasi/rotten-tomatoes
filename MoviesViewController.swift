@@ -92,9 +92,9 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         // update movies position
         var movieFrame: CGRect = tableView.frame
-        movieFrame.origin.y = 64
+        movieFrame.origin.y = 0
         tableView.frame = movieFrame
-        
+       
         let task = session.dataTaskWithRequest(request) { (data: NSData?, response: NSURLResponse?, error: NSError?) -> Void in
             let json = try! NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments) as! NSDictionary
             
