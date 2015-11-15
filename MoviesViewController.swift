@@ -49,13 +49,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         refreshControl.addTarget(self, action: "onRefresh", forControlEvents: UIControlEvents.ValueChanged)
         tableView.insertSubview(refreshControl, atIndex: 0)
         
-        
         loadData()
     }
 
     
     func onRefresh() {
-        loadMoviesList()
+        loadData()
     }
 
     func loadData() {
@@ -69,6 +68,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             loadMoviesListFromSession()
             UIView.animateWithDuration(1.0, delay: 0.0, options: UIViewAnimationOptions.CurveEaseIn, animations: {
                 self.errorView.alpha = 1.0
+                self.errorView.layer.zPosition = 2
             }, completion: nil)
         }
     }
@@ -80,7 +80,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         
         // update movies position
         var movieFrame: CGRect = tableView.frame
-        movieFrame.origin.y = 108
+        movieFrame.origin.y = 40
         tableView.frame = movieFrame
     }
     

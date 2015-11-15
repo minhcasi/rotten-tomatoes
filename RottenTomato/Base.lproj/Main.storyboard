@@ -45,7 +45,7 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" id="6k8-q9-xlv">
+                            <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="123" sectionHeaderHeight="28" sectionFooterHeight="28" id="6k8-q9-xlv">
                                 <rect key="frame" x="0.0" y="108" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <animations/>
@@ -103,7 +103,7 @@
                     <navigationItem key="navigationItem" title="Movies" id="b6s-vd-f7D">
                         <barButtonItem key="backBarButtonItem" title="Back" id="jas-MI-rZV"/>
                     </navigationItem>
-                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="errorView" destination="5dv-qu-t75" id="gCs-vn-EeP"/>

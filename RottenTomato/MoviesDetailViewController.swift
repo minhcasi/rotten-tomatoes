@@ -83,7 +83,7 @@ class MoviesDetailViewController: UIViewController {
     
     func showFullDetailView() {
         var detailFrame: CGRect = detailView.frame
-        detailFrame.origin.y = 0
+        detailFrame.origin.y = 64
         detailView.frame = detailFrame
         
         self.isShowingFullView = true
