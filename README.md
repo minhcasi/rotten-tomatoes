@@ -2,9 +2,10 @@
 
 This is a movies app displaying box office and top rental DVDs using the Rotten Tomatoes API.
 
-Time spent: <Number of hours spent>
+Time spent: 22
 
-Features
+Features:
+
 Required
 
 * [x] User can view a list of movies. Poster images load asynchronously.
